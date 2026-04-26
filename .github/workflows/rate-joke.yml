@@ -25,7 +25,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v5
         with:
           comment-id: ${{ github.event.comment.id }}
-          reaction: laugh
+          reactions: laugh
           edit-mode: replace
           body: |
             ## AI Joke Rating Results
