@@ -17,6 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Rate joke
+        id: rate-joke
         uses: ./
         with:
           joke: ${{ github.event.comment.body }}
