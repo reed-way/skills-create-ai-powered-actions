@@ -39579,7 +39579,7 @@ async function rateJoke(joke, token) {
 
     const client = new OpenAI({ baseURL: endpoint, apiKey: token });
 
-    const completion = await client.chat.completions.create({
+    const completion = await client.chat.completions.parse({
         messages: [
             {
                 role: "system",
